@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   data() {
     return {
@@ -14,11 +15,11 @@ export default {
   },
   methods: {
     searchBooks() {
-      axios.post('/search', { keyword: this.searchKeyword })
-       .then(response => {
+      axios.post('/api/search', { keyword: this.searchKeyword })
+      .then(response => {
           // 处理搜索结果
         })
-       .catch(error => {
+      .catch(error => {
           console.error(error);
         });
     }

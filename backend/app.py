@@ -61,7 +61,7 @@ def get_chapter_content(compiled_book_source, chapter_url, variables, next_chapt
         print(f"Error getting chapter content: {e}")
         return {}
 
-@app.route('/search', methods=['POST'])
+@app.route('/api/search', methods=['POST'])
 def perform_search():
     data = request.get_json()
     keyword = data.get('keyword')
