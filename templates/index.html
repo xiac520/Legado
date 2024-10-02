@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书源校验</title>
+</head>
+<body>
+    <h1>书源校验</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="fileInput">上传 JSON 文件:</label>
+        <input type="file" id="fileInput" name="file" accept=".json">
+        <br><br>
+        <label for="urlInput">输入第三方 URL 链接:</label>
+        <input type="text" id="urlInput" name="url" placeholder="https://example.com/source.json">
+        <br><br>
+        <button type="submit">校验书源</button>
+    </form>
+    <h2>校验结果:</h2>
+    <pre>{{ result }}</pre>
+</body>
+</html>

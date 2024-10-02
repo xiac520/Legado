@@ -1,0 +1,15 @@
+{
+  "build": {
+    "env": {
+      "PYTHON_VERSION": "3.9",
+      "FLASK_APP": "app.py",
+      "FLASK_ENV": "production"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/app.py"
+    }
+  ]
+}
