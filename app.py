@@ -49,4 +49,10 @@ def index():
                 response = requests.get(url)
                 bookSource = response.json()
                 result = validate_source(bookSource)
-                return render_template('index
+                return render_template('index.html', result=result)
+            except Exception as e:
+                return render_template('index.html', result=f'获取 JSON 失败: {str(e)}')
+    return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=True)
