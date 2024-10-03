@@ -1,9 +1,8 @@
 Flask
 requests
-libxml2
-libxml2-dev
-html5-parser
-lxml
+LegadoParser2
+beautifulsoup4
+html5lib
 cssselect
 hjson
 jsonpath_ng

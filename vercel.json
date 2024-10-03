@@ -5,7 +5,7 @@
       "src": "api/main.py",
       "use": "@vercel/python",
       "config": {
-        "installCommand": "apt-get update && apt-get install -y libxml2 libxml2-dev && pip install -r api/requirements.txt"
+        "installCommand": "pip install -r api/requirements.txt"
       }
     }
   ],
