@@ -1,6 +1,6 @@
 Flask
 requests
-git+https://github.com/821938089/LegadoParser#egg=LegadoParser --no-use-pep517
+git+https://github.com/821938089/LegadoParser#egg=LegadoParser
 cssselect
 hjson
 jsonpath_ng
