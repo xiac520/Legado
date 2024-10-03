@@ -3,7 +3,11 @@
   "builds": [
     {
       "src": "api/main.py",
-      "use": "@vercel/python"
+      "use": "@vercel/python",
+      "config": {
+        "pythonVersion": "3.8",
+        "installCommand": "apt-get update && apt-get install -y libxml2 libxml2-dev && pip install -r requirements.txt"
+      }
     }
   ],
   "routes": [
