@@ -1,8 +1,6 @@
 Flask
 requests
 LegadoParser2
-beautifulsoup4
-html5lib
 cssselect
 hjson
 jsonpath_ng
