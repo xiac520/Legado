@@ -1,7 +1,8 @@
 Flask
 requests
-LegadoParser2
-beautifulsoup4
+libxml2
+libxml2-dev
+html5-parser
 lxml
 cssselect
 hjson
