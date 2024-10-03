@@ -1,0 +1,12 @@
+Flask
+requests
+LegadoParser2
+html5-parser
+cssselect
+hjson
+jsonpath_ng
+quickjs
+selenium
+webdriver-manager
+fs
+PyGithub

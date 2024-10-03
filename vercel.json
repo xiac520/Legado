@@ -2,25 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "frontend",
-      "use": "@vercel/static-build",
-      "config": {
-        "framework": "vue"
-      }
-    },
-    {
-      "src": "api/app.py",
+      "src": "api/main.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/api/search",
-      "dest": "api/app.py"
-    },
-    {
       "src": "/(.*)",
-      "dest": "frontend/public/index.html"
+      "dest": "api/main.py"
     }
   ]
 }
