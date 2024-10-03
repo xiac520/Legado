@@ -1,3 +1,7 @@
+# Install system dependencies
+-r pre-requirements.txt
+
+# Install Python dependencies
 Flask
 requests
 LegadoParser2
